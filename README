@@ -1,1 +1,9 @@
-Hello World!
+AppBonobo
+
+Systeme de Connection, inscription et déconnection -> OK
+Lister et voir le profil des autres bonobos -> OK
+
+Liste d'amis -> INCOMPLET (non opérationnel, la table de jointure a été faite avec doctrine mais ne peut être remplie)
+
+Afficher son profil bonobo -> OK
+Modifier son profil bonobo -> NON (Il manque la modification de FOSUserBundle au niveau du formulaire d'édition de profil)
