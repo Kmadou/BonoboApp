@@ -1,0 +1,4 @@
+services:
+#    ek_bonobo.example:
+#        class: EK\BonoboBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

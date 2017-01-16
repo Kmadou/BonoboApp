@@ -1,0 +1,12 @@
+{% extends 'EKBonoboBundle::layout.html.twig' %}
+
+{% block title %}Liste des bonobos inscrits{% endblock %}
+
+{% block content %}
+
+{% include 'EKBonoboBundle:Bonobo:liste.html.twig' with {'users':users} %}
+
+    <br><br>
+    <a href="{{ path('fos_user_profile_show') }}" class="btn btn-default" role="button">Retour</a>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+
+    {% for b in users %}
+
+        <p>Nom : {{ b.username }}</p>
+        <p>Age : {{ b.age }}</p>
+        <p>Famille : {{ b.famille }}</p>
+        <p>Race : {{ b.race }}</p>
+        <p>Nourriture : {{ b.nourriture }}</p>
+
+        <a href="{{ path('ek_bonobo_add', { 'userId': b.id }) }}" class="btn btn-default" role="button">Ajouter dans ma liste d'amis</a>
+    {% else %}
+        <p>Aucun bonobo n'a été trouvé</p>
+    {% endfor %}

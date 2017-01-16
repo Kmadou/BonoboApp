@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Bonobo's Friends{% endblock %}</title>
+    {% block stylesheets %}
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    {% endblock %}
+</head>
+<body>
+    <div class="container">
+        <div id="header" class="jumbotron">
+            <h1>{{ block('title') }}</h1>
+        </div>
+
+        <div id="menu">
+            {% block menu %}
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Menu</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="{{ path('ek_bonobo_index') }}">Accueil</a></li>
+                            <li><a href="{{ path('fos_user_profile_show') }}">Espace membre</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            {% endblock %}
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Application d'amis bonobos - Karim El Rahy</p>
+        </div>
+    </div>
+
+    {% block javascripts %}
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% endblock %}
+</body>
+</html>

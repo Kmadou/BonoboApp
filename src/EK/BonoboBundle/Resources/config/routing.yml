@@ -1,0 +1,19 @@
+ek_bonobo_homepage:
+    path:     /
+    defaults: { _controller: EKBonoboBundle:Bonobo:index }
+
+ek_bonobo_index:
+    path:     /index
+    defaults: { _controller: EKBonoboBundle:Bonobo:index }
+
+ek_bonobo_liste:
+    path:     /liste
+    defaults: { _controller: EKBonoboBundle:Bonobo:liste }
+
+ek_bonobo_vue:
+    path:     /vue/{id}
+    defaults: { _controller: EKBonoboBundle:Bonobo:profile }
+
+ek_bonobo_add:
+    path:     /add/{userId}
+    defaults: { _controller: EKBonoboBundle:Bonobo:add }

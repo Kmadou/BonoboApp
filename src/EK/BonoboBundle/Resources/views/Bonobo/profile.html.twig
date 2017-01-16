@@ -1,0 +1,13 @@
+{% extends 'EKBonoboBundle::layout.html.twig' %}
+
+{% block title %}Liste des bonobos inscrits{% endblock %}
+
+{% block content %}
+
+    <p>Nom : {{ user.username }}</p>
+    <p>Age : {{ user.age }}</p>
+    <p>Famille : {{ user.famille }}</p>
+    <p>Race : {{ user.race }}</p>
+    <p>Nourriture : {{ user.nourriture }}</p>
+
+{% endblock %}
