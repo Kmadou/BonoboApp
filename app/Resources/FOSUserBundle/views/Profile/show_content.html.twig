@@ -1,0 +1,14 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="fos_user_user_show">
+    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
+    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+    <p>Age : {{ user.age }}</p>
+    <p>Famille : {{ user.famille }}</p>
+    <p>Race : {{ user.race }}</p>
+    <p>Nourriture : {{ user.nourriture }}</p>
+
+    <a href="{{ path('ek_bonobo_liste') }}" class="btn btn-default" role="button">Bonobos inscrits</a>
+    <a href="{{ path('fos_user_profile_edit') }}" class="btn btn-default" role="button">Modifier mon compte</a>
+    <a href="{{ path('fos_user_security_logout') }}" class="btn btn-default" role="button">Deconnection</a>
+</div>
