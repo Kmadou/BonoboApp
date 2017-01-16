@@ -7,3 +7,6 @@ Liste d'amis -> INCOMPLET (non opérationnel, la table de jointure a été faite
 
 Afficher son profil bonobo -> OK
 Modifier son profil bonobo -> NON (Il manque la modification de FOSUserBundle au niveau du formulaire d'édition de profil)
+
+
+Karim E.
