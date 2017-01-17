@@ -11,5 +11,3 @@ Modifier son profil bonobo -> NON (Il manque la modification de FOSUserBundle au
 IMPORTANT : 
   - Prendre le fichier Bonobo.rar (contient le projet symfony) du repository (un problème est survenue lors de l'upload de tous les dossiers)
   - Ne pas oublier de modifier dans app/config/parameters.yml les paramètres de la base de donnée, ainsi que la commande php bin/console doctrine:schema:update --force pour mettre a jour la BDD avec les tables nécéssaires au site
-
-Karim E.
